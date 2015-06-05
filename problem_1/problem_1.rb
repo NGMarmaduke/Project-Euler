@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 require_relative '../base_classes/problem_base'
 
+# PROBLEM: Find the sum of all the multiples of 3 or 5 below 1000.
+
 class Problem1 < ProblemBase
   def solve
     sum = 0

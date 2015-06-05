@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 require_relative '../base_classes/problem_base'
 
+# PROBLEM: By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
+
 class Problem2 < ProblemBase
   def solve
     sum = 2
