@@ -12,7 +12,8 @@ unless File.directory?(dirname)
   out_file.puts "#!/usr/bin/env ruby"
   out_file.puts "require_relative '../base_classes/problem_base'"
   out_file.puts ""
-  out_file.puts "PROBLEM: #{ARGV[1]}" if ARGV[1]
+  out_file.puts "# PROBLEM: #{ARGV[1]}" if ARGV[1]
+  out_file.puts "# LINK: https://projecteuler.net/problem=#{ARGV[0]}"
   out_file.puts ""
   out_file.puts "class Problem#{problem_number} < ProblemBase"
   out_file.puts "  def solve"
